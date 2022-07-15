@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Analog</title>
+</head>
+<style>
+.clock{
+height: 92vh;
+width: 35vw;
+margin-top: 6vh;
+margin-left: 35vw;
+background: url(analog.jpg) no-repeat;
+background-size: 100%;
+position: absolute;
+}
+#hour,#min,#seconds{
+    position: absolute;
+    border-radius: 10px;
+}
+#hour{
+    height:90px;
+    width: 7px;
+    background:#d45656;
+    margin-left: 17.229vw;
+    bottom: 58vh;
+    z-index: 10;
+    transform-origin: bottom;
+    transition: ease all;
+}
+#min{
+    height:145px;
+    width: 4px;
+    background: #d45656;
+    margin-left: 17.229vw;
+    bottom: 58vh;
+    z-index: 5;
+    transform-origin: bottom;
+}
+#seconds{
+    height:170px;
+    width: 2.4px;
+    background:aliceblue;
+    margin-left: 17.229vw;
+    bottom: 58vh;
+    z-index: 0;
+    transform-origin: bottom;
+}
+#spot{
+  position: absolute;
+  height: 2vh;
+  width: 1.3vw;
+  border-radius: 90vh;
+  background-color: black;
+  border-radius: 3000px;
+  transform: translate(51.8vw,39vh);
+  z-index: 15;
+}
+
+</style>
+<body>
+<div class="clock">
+    <div id="hour"></div>
+    <div id="min"></div>
+    <div id="seconds"></div>
+</div>
+    <div id="spot"></div>
+    
+
+</body>
+<script src="analog.js"></script>
+</html>
